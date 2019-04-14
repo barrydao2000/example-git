@@ -1,0 +1,8 @@
+some command for git:
+
+git status
+git add <file>
+git commit -m "content"
+
+git log
+git show <
