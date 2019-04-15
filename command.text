@@ -19,3 +19,11 @@ git merge branchB				// A <---- B. enter all of responsitory of B to A. you must
 git reset --soft <commit code> 		//back to commit you choose, and keep all data file and so detele all 										commit behind commit you choose, biside add all file to the staging area
 git reset --mixed <commit code>		//same as --soft but add all file to working directory
 git reset --hard <commit code> 		//back to commit you choose, and detele all new update that mean back all 										file to the version of the commit you choose
+git revert <commit code>		
+.gitignore					      //A file contain all the name of file or folder you don't want manage by git
+
+//about gitHub
+git remote add origin <link address of github>		//origin git to link
+git remote -v  					//to check about remote
+git push -u origin master 		//for the first time you push
+git push						//quick push
