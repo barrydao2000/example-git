@@ -16,4 +16,6 @@ git checkout nameOfBranch		//pointing to that branch
 git branch -D nameOfBranch 		//delete a branch
 git merge branchB				// A <---- B. enter all of responsitory of B to A. you must checkout A first
 
-git reset --soft <commit code> 
+git reset --soft <commit code> 		//back to commit you choose, and keep all data file and so detele all 										commit behind commit you choose, biside add all file to the staging area
+git reset --mixed <commit code>		//same as --soft but add all file to working directory
+git reset --hard <commit code> 		//back to commit you choose, and detele all new update that mean back all 										file to the version of the commit you choose
