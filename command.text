@@ -1,8 +1,19 @@
 some command for git:
 
-git status
-git add <file>
-git commit -m "content"
+git status		//check status
+git add <file>	//add file to staging area
+git commit -m "content"	//add file to responsitory
 
-git log
-git show <
+git log			//check about history change
+git show <commit code>	//check clearly and full about how file change, such as about what line is adding/							deleting, etc..
+git diff 		//working when a file haven't git add yet, so the terminal show all different about the last 				 old file and the new file
+git checkout -- <file>	// a file haven't git add, so it will back to the last old file (discard changes in 						working directory)
+git reset HEAD <file>		//to unstage (move file from staging area to working directory)
+
+git checkout -b nameOfBranch 	// create and pointing to that branch. tip for this: when create a new 										feature, should take the name is: feature/name-Of-Feature
+git branch				//show all branch you have, and the green one is the branch you pointing to
+git checkout nameOfBranch		//pointing to that branch
+git branch -D nameOfBranch 		//delete a branch
+git merge branchB				// A <---- B. enter all of responsitory of B to A. you must checkout A first
+
+git reset --soft <commit code> 
